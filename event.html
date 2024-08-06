@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <header>
+        <h1>Event Management</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome to Our Event Management Site</h2>
+        <img src="image1.jpg" alt="Landscape Image" class="landscape image">
+        <p>Your one-stop solution for managing and attending events.</p>
+    </section>
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Event 1</h3>
+            <img src="image2.jpg" alt="Event 1 Image" class="event-img">
+            <p>Date: July 15, 2024</p>
+            <p>Location: New York</p>
+            <p>Description: A wonderful event in New York.</p>
+        </div>
+        <div class="event">
+            <h3>Event 2</h3>
+            <img src="image3.jpg" alt="Event 2 Image" class="event-img">
+            <p>Date: August 20, 2024</p>
+            <p>Location: Los Angeles</p>
+            <p>Description: Another amazing event in Los Angeles.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Event Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>
